@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4bb9ccb-fdf3-4aa7-a461-72e55ef5eb48" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstreactprojectfrontend/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/firstreactprojectfrontend/src/setupTests.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/firstreactprojectfrontend" />
+  </component>
+  <component name="ProjectId" id="1ZYMIUx5uQs8IfTG3tiPm6krwlE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4bb9ccb-fdf3-4aa7-a461-72e55ef5eb48" name="Default Changelist" comment="" />
+      <created>1585011494203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585011494203</updated>
+      <workItem from="1585011496403" duration="3286000" />
+      <workItem from="1585260693428" duration="88000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="408" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585014094846">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="408" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.741@0.27.1366.741" timestamp="1585014094846" />
+  </component>
+</project>
