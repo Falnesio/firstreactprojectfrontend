@@ -1,7 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+//import React, { useState } from 'react';
 // JSX (JavaScript + XML)
 
-import Header from './Header';
+import './global.css';
+
+import Logon from './pages/Logon'
+
+function App() {
+    return(
+        <Logon />
+    );
+}
+
+/*import Header from '../unused_Header';
 
 function App() {
     const [counter, setCounter] = useState(0);
@@ -13,9 +24,9 @@ function App() {
     }
 
     return (
-/*      <Header>
+/!*      <Header>
         Be the Hero
-      </Header>  Versão com children*/
+      </Header>  Versão com children*!/
       //<Header title="Be the Hero" /> com propriedades
       //<Header /> versão sem propriedades
       <div>
@@ -23,6 +34,6 @@ function App() {
           <button onClick={increment}>Incrementar</button>
       </div>
   );
-}
+}*/
 
 export default App;
