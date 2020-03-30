@@ -1,18 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiPower, FiTrash2 } from "react-icons/fi";
+
+import api from '../../services/api';
 
 import './styles.css';
 
 import logoImg from '../../assets/logo.svg'
 
 export default function Profile(){
+    const [incidents, setIncidents] = useState([]);
+
+    const ongName = localStorage.getItem('ongName');
+    const ongId = localStorage.getItem('ongId');
+
+    useEffect(() => {
+        api.get('./profile', {
+            headers: {
+                Authorization: ongId,
+            }
+        }).then(response => {
+            setIncidents(response.data);
+        })
+    }, [ongId]); /*Disparar uma função em determinado tempo*/
+    /*
+    Acima, quando as coisas em deps '[]' mudarem, é executado a função
+    * se for deixado vazio, só ocorre uma única vez
+    * */
+
+    async function handleDeleteIncident(id) {
+        try {
+            await api.delete(`incidents/${id}`, {
+                headers: {
+                    Authorization: ongId,
+                }
+            });
+
+            setIncidents(incidents.filter(incident => incident.id !== id));
+        } catch (err) {
+            alert('Erro ao deletar caso, tente novamente.')
+        }
+    }
+
     return (
         <div className="profile-container">
             <header>
                 <img src={logoImg} alt={"Be The Hero"}/>
                 <span>
-                    Bem vinda, APAD
+                    Bem vinda, {ongName}
                 </span>
 
                 <Link className={"button"} to="/incidents/new">
@@ -26,59 +61,26 @@ export default function Profile(){
             <h1>Casos cadastrados</h1>
 
             <ul>
-                <li>
-                    <strong>Caso:</strong>
-                    <p>Caso teste</p>
+                {incidents.map(incident => ( /*incident => {return(etc.)}*/
+                    <li key={incident.id}>
+                        <strong>Caso:</strong>
+                        <p>{incident.title}</p>
 
-                    <strong>Descrição:</strong>
-                    <p>Descrição teste</p>
+                        <strong>Descrição:</strong>
+                        <p>{incident.description}</p>
 
-                    <strong>Valor:</strong>
-                    <p>R$ 120,00</p>
-                    <button type="button">
-                        <FiTrash2 size={20} color="#a8a8b3"/>
-                    </button>
-                </li>
-                <li>
-                    <strong>Caso:</strong>
-                    <p>Caso teste</p>
-
-                    <strong>Descrição:</strong>
-                    <p>Descrição teste</p>
-
-                    <strong>Valor:</strong>
-                    <p>R$ 120,00</p>
-                    <button type="button">
-                        <FiTrash2 size={20} color="#a8a8b3"/>
-                    </button>
-                </li>
-                <li>
-                    <strong>Caso:</strong>
-                    <p>Caso teste</p>
-
-                    <strong>Descrição:</strong>
-                    <p>Descrição teste</p>
-
-                    <strong>Valor:</strong>
-                    <p>R$ 120,00</p>
-                    <button type="button">
-                        <FiTrash2 size={20} color="#a8a8b3"/>
-                    </button>
-                </li>
-                <li>
-                    <strong>Caso:</strong>
-                    <p>Caso teste</p>
-
-                    <strong>Descrição:</strong>
-                    <p>Descrição teste</p>
-
-                    <strong>Valor:</strong>
-                    <p>R$ 120,00</p>
-                    <button type="button">
-                        <FiTrash2 size={20} color="#a8a8b3"/>
-                    </button>
-                </li>
+                        <strong>Valor:</strong>
+                        <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
+                        <button onClick={() => handleDeleteIncident(incident.id)} type="button">
+                            {/**Caso fosse feito onClick= handleDeleteIncident(incident.id)
+                            * Seriam deletados todos os incidentes assim que a página abrisse pois
+                            * estaria retornando o resultado da função e não a função como parâmetro do click
+                            **/}
+                            <FiTrash2 size={20} color="#a8a8b3" />
+                        </button>
+                    </li>
+                ))}
             </ul>
         </div>
-    )
+    );
 }
