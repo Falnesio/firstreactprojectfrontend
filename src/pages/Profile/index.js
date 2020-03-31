@@ -16,6 +16,10 @@ export default function Profile(){
 
     const history = useHistory();
 
+    if (!ongId) {
+        history.push('/');
+    }
+
     useEffect(() => {
         api.get('./profile', {
             headers: {
